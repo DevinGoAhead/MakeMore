@@ -1,0 +1,73 @@
+# === 系统与编辑器 (System & Editors) ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Python 编译与缓存 (Python Build & Cache) ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === 虚拟环境 (Virtual Environments) ===
+# 建议将所有依赖隔离在虚拟环境中
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# === 数据集 (Datasets) ===
+# AI 项目的数据集通常很大，不应进入 Git
+data/
+datasets/
+*.csv
+*.jsonl
+*.txt
+# 如果你手动下载了 makemore 用到的 names.txt，可以根据需求决定是否取消注释
+# !data/names.txt 
+
+# === 模型权重与检查点 (Weights & Checkpoints) ===
+# 训练过程中产生的模型文件
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.onnx
+out/
+checkpoints/
+models/
+
+# === 实验日志与可视化 (Logs & Visualization) ===
+runs/
+logs/
+.tensorboard/
+wandb/
+
+# === Jupyter Notebook 相关 ===
+.ipynb_checkpoints
+# 如果不希望提交 Notebook 产生的临时输出
+# *.checkpoint.ipynb
+
+# === 环境配置与密钥 (Config & Secrets) ===
+.env
+.flaskenv
+# 这里的 .exp 可能包含实验敏感配置
+configs/*.local.yaml
